@@ -1,1 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    org.hibernate.sql: debug
+
+data-go-kr:
+  api:
+    end-point: https://apis.data.go.kr/B551011/PhotoGalleryService1/galleryList1
+    service-key: HPVZU5Dfdod6uciLWx3TRDMDNrVwZH0%2FhJXi4ZYZuqKEj7Oi7fiTw%2BineGZYlvT9cTW6bx9V5JN2M5Pod3Y58A%3D%3D
+
 
